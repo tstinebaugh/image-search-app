@@ -68,7 +68,9 @@ const SelectionBar: React.FC<SelectionBarProps> = ({
 
   return (
     <Bar>
-      <span>{selectedCount} images selected</span>
+      <span>
+        {selectedCount} {selectedCount === 1 ? `image` : `images`} selected
+      </span>
       <Button onClick={onClear}>Clear</Button>
       <Button onClick={downloadImages}>Download Selected</Button>
     </Bar>
