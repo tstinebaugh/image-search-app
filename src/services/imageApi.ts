@@ -16,7 +16,6 @@ export const searchImages = async (term: string): Promise<ImageType[]> => {
         },
       }
     );
-    console.log(response);
     return response.data.hits;
   } catch (error) {
     console.error("Error fetching images:", error);

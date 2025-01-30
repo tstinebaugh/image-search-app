@@ -56,7 +56,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
           selected={selectedImages.includes(image)}
           onClick={() => onImageClick(image)}
         >
-          <Image src={image.webformatURL} alt={image.alt_description} />
+          <Image src={image.webformatURL} />
         </ImageContainer>
       ))}
     </Gallery>
